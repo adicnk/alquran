@@ -1,1 +1,1 @@
-# alquran
+# Alqur'an per kata

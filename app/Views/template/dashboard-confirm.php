@@ -71,7 +71,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white active bg-gradient-primary" href="/confirm">
+                    <a class="nav-link text-white active bg-gradient-primary" href="/request">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">check</i>
                         </div>
@@ -149,7 +149,7 @@
                             </a>
                         </li>
                         <li class="nav-item px-3 d-flex align-items-center">
-                            <a href="/confirm" class="nav-link text-body font-weight-bold px-0">
+                            <a href="/beli" class="nav-link text-body font-weight-bold px-0">
                                 <i class="fa fa-check me-sm-1"></i>
                                 Konfirmasi Pembayaran
                             </a>

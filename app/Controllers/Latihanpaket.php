@@ -28,24 +28,21 @@ class LatihanPaket extends BaseController
     public function index()
     {
         session()->set('isFinish', false);
-        //$user = $this->userModel->searchPaket(session()->get('userID'));
+        $user = $this->userModel->searchPaket(session()->get('userID'));
         
         // Soal tp (tanpa pembahasan) dan dp (dengan pembahasan)        
         //$soal = $this->soalModel->isChoosen();
-        //$soalClass = $this->request->getVar('soalClass');
-    //foreach ($user as $u) :
-    //    switch ($u['paket']) {
-    //        case 'demo':                    
-    //            //d($soalClass);
-    //            $totalSoal=$this->userSubcribeModel->totalSoal(1,$soalClass);
-    //             break;                
-    //       }
-    //   endforeach;
+        $soalClass = $this->request->getVar('soalClass');
+        foreach ($user as $u) :
+            switch ($u['paket']) {
+                case 'demo':                    
+                    //d($soalClass);
+                    $totalSoal=$this->userSubcribeModel->totalSoal(1,$soalClass);
+                    break;                
+            }
+        endforeach;
 
-    $user = session()->get('userID');
-    $soalClass = $this->request->getVar('soalClass');
-    $totalSoal = $this->userSubcribeModel->totalSoal($user,$soalClass);
-    $soal = $this->soalModel->soalBuilder($soalClass,$totalSoal);
+        $soal = $this->soalModel->soalBuilder($soalClass,$totalSoal);
 
         //$totalSoal = $this->configModel->totalSoal($user);
         $no = $this->request->getVar('id');

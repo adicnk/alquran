@@ -1,4 +1,4 @@
-<?= $this->extend('template/dashboard-beli') ?>
+<?= $this->extend('template/dashboard-belajar') ?>
 <?= $this->section('content') ?>
 
 <?php $db = \Config\Database::connect(); ?>
@@ -11,20 +11,20 @@
             </div> -->
             <div class="card-body">
                 
-                <form method="post" action="/belipaket">
+                <form method="post" action="/latihanpaket">
                     <?= csrf_field() ?>
                     
                     <?php foreach ($paket as $pkt) {
                         switch ($pkt['paket']) {
                             case "demo": 
                                 ?>
-            <h3>Paket yg Digunakan</h3><hr/>
+            <h3>Paket Demo</h3><hr/>
             <!--<h5>Latihan Soal dengan Jawaban Tanpa Pembahasan</h5>-->
             <?php $queryClass = $db->table('kategori_soal')->getWhere(['is_tp' => 1]);
             foreach ($queryClass->getResult('array') as $k) : ?>
-            <button class="btn btn-secondary" disabled>
+            <button type="submit" onclick="setSoalClass(<?=$k['id']?>)"  class="btn btn-primary">
             <span><?=$k['kname']?></span>
-            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">6 soal</span>
+            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">15</span>
             </button>
             <?php endforeach ?>
             <br/>
@@ -32,7 +32,7 @@
             <?php $queryClass = $db->table('kategori_soal')->getWhere(['is_tp' => null]);
             foreach ($queryClass->getResult('array') as $k) : ?>
             <button type="submit" onclick="setSoalClass(<?=$k['id']?>)"  class="btn btn-warning"><?=$k['kname']?>
-            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">66</span>
+            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">5</span>
             </button><br/>
             <?php endforeach ?>
 
@@ -40,25 +40,13 @@
             <h3>Beli Paket</h3><hr/>
             <?php $queryClass = $db->table('kategori_soal')->getWhere(['is_tp' => 1]);
             foreach ($queryClass->getResult('array') as $k) : ?>
-            <button class="btn btn-warning" disabled>
+            <button type="submit" onclick="setSoalClass(<?=$k['id']?>)"  class="btn btn-primary">
             <span><?=$k['kname']?></span>
-            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">180++ soal</span>
+            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">50</span>
             </button>
             <h6>  <?= ($k['price']) ? 'Harga: Rp ' :'' ?><?= number_format($k['price']); ?>
-            <?= $k['price'] ?  '<button role="link" type="submit" id="kategoriID" name="KategpriID" href="belipaket/'.$k['id'].'" class="btn btn-primary btn-sm">Beli</button>':'';?>
-            
-            <?php $queryUS = $db->query("SELECT * FROM user_subcribe 
-                WHERE user_id=".$userID." AND kategori_soal_id=".$k['id']);                
-            foreach ($queryUS->getResult('array') as $us) : ?>
-                <?php //d($us['is_confirm']);
-                if ($queryUS){                
-                if ($us['is_confirm']) {
-                    echo '<button class="btn btn-primary btn-sm" disabled>Beli</button>';
-                }}else{
-                    
-                }
-                ?>
-            <?php endforeach; endforeach; ?>
+             <?= $k['price'] ?  '<a type="button" href="belipaket/'.$k['id'].'" class="btn btn-secondary btn-sm">Beli</a>':''?><br/>
+            <?php endforeach ?>
                 
         <?php break;
         case "bronze": ?>

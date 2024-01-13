@@ -41,23 +41,21 @@ class Exercise extends BaseController
     public function soal()
     {
         session()->set('isFinish', false);
-        //$user = $this->userModel->searhAdminID(session()->get('userID'));
+        $user = $this->userModel->searhAdminID(session()->get('userID'));
         // Soal tp (tanpa pembahasan) dan dp (dengan pembahasan)        
         //$soal = $this->soalModel->isChoosen();
         //$soal = $this->soalModel->isChoosen();
         
-        //foreach ($user as $u) :
-        //    switch ($u['paket']) {
-        //        case 'demo':                    
-        //            $totalSoal=$this->userSubcribeModel->totalSoal(1);
-        //            break;                
-        //    }
-        //endforeach;
-        $user = session()->get('userID');
+        foreach ($user as $u) :
+            switch ($u['paket']) {
+                case 'demo':                    
+                    $totalSoal=$this->userSubcribeModel->totalSoal(1);
+                    break;                
+            }
+        endforeach;
+
         $soalClass = $this->request->getVar('soalClass');
-        $totalSoal = $this->userSubcribeModel->totalSoal($user,$soalClass);
-        $soal = $this->soalModel->soalBuilder($soalClass,$totalSoal);
-//        $soal = $this->soalModel->soalBuilder($soalClass);
+        $soal = $this->soalModel->soalBuilder($soalClass);
 
         //dd($soalClass);
 
@@ -79,7 +77,8 @@ class Exercise extends BaseController
             'title' => "Latihan Soal",
             'soalIdx' => $soalArr,
             'soal' => $soal,
-            'total' => $totalSoal
+            'total' => $totalSoal,
+            'paket' => $user            
         ];
         
         return view('exercise/latihan', $data);
@@ -239,6 +238,22 @@ class Exercise extends BaseController
         return view('exercise/profile', $data);
     }
 
+    public function request(){
+        $userID = session()->get('userID');
+
+        $data = [
+            'title'   => "User Login"
+        ];                                 
+        if (!isset($userID)) {
+            return view('exercise/login', $data);            
+        }
+
+    $data = [
+        'paket' => $this->userModel->searhAdminID(session()->get('userID'))    
+    ];
+        return view('exercise/beli',$data);
+    }
+
     public function beli(){
         $userID = session()->get('userID');
 
@@ -250,23 +265,37 @@ class Exercise extends BaseController
         }
 
     $data = [
-        'paket' => $this->userModel->searchPaket(session()->get('userID')),
-        'userID' => $userID     
+        'paket' => $this->userModel->searchPaket(session()->get('userID')) 
     ];
-
         return view('exercise/beli',$data);
     }
-    
+
+    public function belifp(){
+        $userID = session()->get('userID');
+
+        $data = [
+            'title'   => "User Login"
+        ];                                 
+        if (!isset($userID)) {
+            return view('exercise/login', $data);            
+        }
+
+    $data = [
+        'paket' => $this->userModel->searchPaket(session()->get('userID')) 
+    ];
+        return view('exercise/beli',$data);
+    }
+
     public function belipaket($idKategoriSoal){
         $userID = session()->get('userID');
-        
+
         $data = [
             'title'   => "User Login",
         ];                                 
         if (!isset($userID)) {
             return view('exercise/login', $data);            
         }
-        
+
         $idUserSubcribe = $this->userSubcribeModel->getID($idKategoriSoal,$userID);
         $total = $this->kategoriModel->getTotalSoal($idKategoriSoal);
 

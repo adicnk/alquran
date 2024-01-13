@@ -20,19 +20,12 @@ $mail->Port = 587;
 $mail->SMTPAuth = true;
 $mail->Username = 'daftar@perawat.devinc.website';
 $mail->Password = 'kprwt2023';
-$mail->setFrom('daftar@perawat.devinc.website', 'Daftar Latihan Soal Keperawatan');
-$mail->addReplyTo('daftar@perawatadevinc.website', 'Daftar Latihan Soal Keperawatan');
+$mail->setFrom('daftar@perawat.devinc.website', 'Daftar Latihan Soal');
+$mail->addReplyTo('daftar@perawatadevinc.website', 'Daftar Latihan Soal');
 
 $mail->addAddress($email, $nama);
-$mail->Subject = 'Daftar Latihan Soal Keperawatan';
-
-$queryClass = $db->table('jurusan')->getWhere(['id' => $jurusan]);
-foreach ($queryClass->getResult('array') as $j) :
-    $jurusan = $j['jname'];
-endforeach;
-
+$mail->Subject = 'Daftar Latihan Soal';
 $message=
-    '<p>Selamat,</p>'.
     '<p>Anda telah mendaftar ke <b>Latihan Soal Keperawatan </b> dengan detail sebagai berikut :</p>'.
     '<div class=="mt-2">Nama         :'.$nama.'</div>'.
     '<div>Sekolah      :'.$asal.'</div>'.
@@ -44,7 +37,7 @@ $mail->msgHTML($message);
 
 $mail->AltBody = 'This is a plain-text message body';
 $mail->addAttachment('logo/logo.png');
-$mail->addBCC('ysrent@gmail.com');
+
 if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
@@ -57,7 +50,7 @@ if (!$mail->send()) {
     </div>
     <!-- Page Heading -->
     <div class="align-items-center justify-content-between mb-2">
-        <h1 class="h3 mb-0 text-gray-800">Pendaftaran Berhasil</h1>
+        <h1 class="h3 mb-0 text-gray-800"><?= $title; ?></h1>
         <h6 class="h6 mb-0 text-gray my-2">Anda telah mendaftar Latihan Soal Keperawatan</h6>        
     </div>
     <div>email telah dikirim ke <?= $email ?></div>

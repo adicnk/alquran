@@ -278,21 +278,16 @@ class Submit extends BaseController
             'idx' => $lastID
         ]);
 
-        $this->userSubcribeModel->save([
-            'user_id' => $lastID,
-            'total' => 6
-        ]);
-
         return view('admin/email',$data);
         //return redirect()->to('https://keperawatan.devinc.website');
     }
 
     public function pesan($id){
 
-        $hpUser = "6281214684065";
+        $hpUser = "81214684065";
         $message = "ok";
         $data = [
-            'title' => 'Pendaftaran Berhasil',
+            'title' => 'Keperawatan | Daftar',
             'hp' => $hpUser,
             'message' => $message
         ];
@@ -302,8 +297,8 @@ class Submit extends BaseController
             'is_message' => 1
         ]);
 
-        return view('admin/pesan',$data);
-        //return redirect()->to('https://perawat.devinc.website/admin/belipaket');
+        //return view('admin/pesan',$data);
+        return redirect()->to('https://perawat.devinc.website/admin/belipaket');
     }
 
     public function confirm($id){

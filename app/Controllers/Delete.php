@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\UserMDL;
-use App\Models\UserSubcribeMDL;
 use App\Models\LoginMDL;
 use App\Models\SoalMDL;
 use App\Models\JawabanMDL;
@@ -11,12 +10,11 @@ use App\Models\LatihanMDL;
 
 class Delete extends BaseController
 {
-    protected $userModel, $userSubcribeModel, $loginModel, $soalModel, $jawabanModel, $latihanModel;
+    protected $userModel, $loginModel, $soalModel, $jawabanModel, $latihanModel;
 
     public function __construct()
     {
         $this->userModel = new UserMDL();
-        $this->userSubcribeModel = new UserSubcribeMDL();
         $this->loginModel = new LoginMDL();
         $this->soalModel = new SoalMDL();
         $this->jawabanModel = new JawabanMDL();
@@ -36,13 +34,11 @@ class Delete extends BaseController
                 'url' => $url
             ];
         } else {
-            
             $this->userModel->delUser($id);
             if ($this->loginModel->search($id) == 1) { //search in login is admin?
                 $this->loginModel->delAdmin($id);
             };
 
-            $this->userSubcribeModel->delUser($id);
             $this->latihanModel->delLatihan($id);
 
             $data = [

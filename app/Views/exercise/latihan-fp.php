@@ -1,4 +1,4 @@
-<?= $this->extend('template/dashboard-latihan') ?>
+<?= $this->extend('template/dashboard-belajar') ?>
 <?= $this->section('content') ?>
 
 <?php $db = \Config\Database::connect(); ?>
@@ -18,17 +18,17 @@
                         switch ($pkt['paket']) {
                             case "demo": 
                                 ?>
-            <h3> Soal yg Tersedia</h3><hr/>
-            <!--<h5>Latihan Soal dengan Jawaban Tanpa Pembahasan</h5>-->
+            <h3>Account Demo</h3><hr/>
+            <h5>Latihan Soal dengan Jawaban Tanpa Pembahasan</h5>
             <?php $queryClass = $db->table('kategori_soal')->getWhere(['is_tp' => 1]);
             foreach ($queryClass->getResult('array') as $k) : ?>
             <button type="submit" onclick="setSoalClass(<?=$k['id']?>)"  class="btn btn-primary">
             <span><?=$k['kname']?></span>
-            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">Demo 6 soal</span>
+            <span class="badge badge-sm badge-circle badge-danger border border-white border-2">15</span>
             </button><br/>
             <?php endforeach ?>
             <br/>
-            <!--<h5>Latihan Soal dengan Jawaban dan Pembahasan</h5>-->
+            <h5>Latihan Soal dengan Jawaban dan Pembahasan</h5>
             <?php $queryClass = $db->table('kategori_soal')->getWhere(['is_tp' => null]);
             foreach ($queryClass->getResult('array') as $k) : ?>
             <button type="submit" onclick="setSoalClass(<?=$k['id']?>)"  class="btn btn-warning"><?=$k['kname']?>

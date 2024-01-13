@@ -36,23 +36,21 @@ class Latihan extends BaseController
             if (!isset($userID)) {
                 return view('exercise/login', $data);            
             }
-            $userID = session()->get('userID');
-            //$user = $this->userModel->searhAdminID($userID);
+            $user = $this->userModel->searhAdminID(session()->get('userID'));
             //$totalSoal = $this->configModel->totalSoal($user);
             //$soal = session()->get('soal');
             //$totalSoal = $this->configModel->totalSoal();
             
             $soalClass=(int) session()->get('soalClass');
-            $totalSoal = $this->userSubcribeModel->totalSoal($userID,$soalClass);
-            //foreach ($user as $u) :
-            //   switch ($u['paket']) {
-            //       case 'demo':                    
-            //           $totalSoal=$this->userSubcribeModel->totalSoal(1,$soalClass);
-            //           break;                
-            //       }
-            //endforeach;
+            foreach ($user as $u) :
+                switch ($u['paket']) {
+                    case 'demo':                    
+                        $totalSoal=$this->userSubcribeModel->totalSoal(1,$soalClass);
+                        break;                
+                    }
+                endforeach;
                 
-            $soal = $this->soalModel->soalBuilder($soalClass,$totalSoal);
+                $soal = $this->soalModel->soalBuilder($soalClass,$totalSoal);
     
             $nilaiMin = $this->configModel->nilaiMinimum();
 

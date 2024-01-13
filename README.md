@@ -6,5 +6,5 @@ Project ini terinspirasi dari kebutuhan memahami arti alquran yang lebih dalam u
 Informasi lebih lanjut [official site](http://alquran.devinc.website).
 
 ## Timeline Progress Software:
-** 13 Januari 2024 **
+**13 Januari 2024**
 - Mengumpulkan bahan yg dibutuhkan (database bhs arab dan terjemahnnya)

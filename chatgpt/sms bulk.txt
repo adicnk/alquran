@@ -1,0 +1,70 @@
+Sending SMS in bulk can be done using SMS gateways, which can provide APIs for sending SMS messages programmatically. However, SMS gateways often charge for their services, and some may not offer free plans. Here's one way to send SMS messages in bulk using PHP:
+
+Sign up for a free account on an SMS gateway that offers a free plan. Some examples include Twilio, Nexmo, and Textlocal.
+
+Obtain your API credentials from the SMS gateway. This typically involves creating an API key and secret, which you can use to authenticate your requests.
+
+Install a PHP library for sending SMS messages via the SMS gateway. Most SMS gateways offer PHP libraries or SDKs that can simplify the process of sending SMS messages.
+
+Write a PHP script that uses the SMS gateway library to send SMS messages in bulk. This script might involve the following steps:
+
+Read a list of phone numbers and messages from a file or database.
+Loop through the list and send each message using the SMS gateway API.
+Handle any errors or exceptions that may occur during the sending process.
+Here's an example of how you might use the Twilio PHP library to send SMS messages in bulk:
+
+php
+Copy code
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Twilio\Rest\Client;
+
+// Set your Twilio API credentials
+$sid = 'your_twilio_account_sid';
+$token = 'your_twilio_auth_token';
+$from = 'your_twilio_phone_number';
+
+// Initialize the Twilio client
+$client = new Client($sid, $token);
+
+// Read a list of phone numbers and messages from a file or database
+$messages = [
+    ['to' => '+1234567890', 'body' => 'Hello, world!'],
+    ['to' => '+0987654321', 'body' => 'How are you today?'],
+    // ...
+];
+
+// Send each message using the Twilio API
+foreach ($messages as $message) {
+    $client->messages->create(
+        $message['to'],
+        ['from' => $from, 'body' => $message['body']]
+    );
+}
+
+Note that this is just one example and that the specific details may vary depending on the SMS gateway you choose and the PHP library you use. Be sure to consult the API documentation and other resources provided by your SMS gateway for more information.
+
+
+There are many SMS gateways available, but not all of them offer free plans. Here are ten free SMS gateways that you can use:
+
+Twilio - Twilio offers a free plan that allows you to send up to 100 SMS messages per month.
+
+Nexmo - Nexmo offers a free plan that allows you to send up to 5 SMS messages per second.
+
+Textlocal - Textlocal offers a free plan that allows you to send up to 10 SMS messages per day.
+
+Clickatell - Clickatell offers a free plan that allows you to send up to 10 SMS messages per month.
+
+Plivo - Plivo offers a free plan that allows you to send up to 5 SMS messages per month.
+
+Clockwork - Clockwork offers a free plan that allows you to send up to 10 SMS messages per day.
+
+Burst SMS - Burst SMS offers a free plan that allows you to send up to 14 SMS messages per day.
+
+MessageBird - MessageBird offers a free plan that allows you to send up to 50 SMS messages per month.
+
+SMS Gateway Hub - SMS Gateway Hub offers a free plan that allows you to send up to 10 SMS messages per day.
+
+Zenvia - Zenvia offers a free plan that allows you to send up to 30 SMS messages per month.
+
+Note that the specific features and limitations of each free plan may vary, so be sure to consult the documentation and terms of service for each SMS gateway before choosing one to use.

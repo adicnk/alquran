@@ -3,56 +3,78 @@
 namespace App\Controllers;
 
 use App\Models\UserMDL;
-use App\Models\UserInfoMDL;
-use App\Models\EventMDL;
-use App\Models\ContentMDL;
-use App\Models\ContentOptionMDL;
-use App\Models\WaitContentMDL;
+use App\Models\UserSubcribeMDL;
+use App\Models\LoginMDL;
+use App\Models\SoalMDL;
+use App\Models\JawabanMDL;
+use App\Models\LatihanMDL;
 
 class Delete extends BaseController
 {
-	protected $userModel, $userInfoModel, $eventModel, $contentModel, $contentOptionModel, $waitContentModel;
+    protected $userModel, $userSubcribeModel, $loginModel, $soalModel, $jawabanModel, $latihanModel;
 
-	public function __construct()
-	{
-		$this->userModel = new UserMDL();
-		$this->userInfoModel = new UserInfoMDL();
-		$this->eventModel = new EventMDL();
-		$this->contentModel = new ContentMDL();
-		$this->contentOptionModel = new ContentOptionMDL();
-		$this->waitContentModel = new WaitContentMDL();
-	}
+    public function __construct()
+    {
+        $this->userModel = new UserMDL();
+        $this->userSubcribeModel = new UserSubcribeMDL();
+        $this->loginModel = new LoginMDL();
+        $this->soalModel = new SoalMDL();
+        $this->jawabanModel = new JawabanMDL();
+        $this->latihanModel = new LatihanMDL();
+    }
 
-	public function index()
-	{
-	}
+    public function user($id)
+    {
+        // dd($this->request->getVar('url'));
+        $url = $this->request->getVar('url');
+        if ($url == 'admin') {
+            $this->userModel->delUser($id);
+            $this->loginModel->delAdmin($id);
 
-	public function mahasiswa($id)
-	{
-		$this->userModel->delUser($id);
-		$this->userInfoModel->delUserInfo($id);
-		return redirect()->to('/admin/mahasiswa');
-	}
+            $data = [
+                'title' => "Data " . $url . " berhasil di Delete",
+                'url' => $url
+            ];
+        } else {
+            
+            $this->userModel->delUser($id);
+            if ($this->loginModel->search($id) == 1) { //search in login is admin?
+                $this->loginModel->delAdmin($id);
+            };
 
-	public function administrator($id)
-	{
-		$this->userModel->delUser($id);
-		$this->userInfoModel->delUserInfo($id);
-		return redirect()->to('/admin/administrator');
-	}
+            $this->userSubcribeModel->delUser($id);
+            $this->latihanModel->delLatihan($id);
 
-	public function jadwal($id)
-	{
-		$this->eventModel->delEvent($id);
-		$this->waitContentModel->deleteWait($id);
-		return redirect()->to('/admin/jadwal');
-	}
+            $data = [
+                'title' => "Data " . $url . " berhasil di Delete",
+                'url' => $url
+            ];
+        }
+        $this->latihanModel->delLatihan($id); // delete latihan
+        return view('form/delete-user', $data);
+    }
 
-	public function materi($id)
-	{
-		$this->contentModel->delContent($id);
-		$this->contentOptionModel->delContentOption($id);
-		$this->waitContentModel->deleteWait($id);
-		return redirect()->to('/admin/materi');
-	}
+    public function soal($cat,$id)
+    {
+        $query = $this->soalModel->searchSoalID($cat,$id);
+
+        // Delete the file from folder
+        foreach ($query as $q) {
+            $fileGambar = $q['picture_url'];
+            $fileGambar ? unlink('img/' . $fileGambar) : '';
+            $fileSuara = $q['audio_url'];
+            $fileSuara ? unlink('aud/' . $fileSuara) : '';
+        }
+
+        $soal_id = $this->soalModel->getSoalID($cat,$id);
+        $this->soalModel->delSoal($soal_id);
+        $this->jawabanModel->delJawaban($soal_id);
+        $this->soalModel->reSortIdx();
+
+        $data = [
+            'title' => "Data soal berhasil di Delete",
+            'url' => 'soal'
+        ];
+        return view('form/delete-soal', $data);
+    }
 }

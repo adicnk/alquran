@@ -1,0 +1,155 @@
+CRITICAL - 2022-12-03 04:04:36 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:06:18 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:07:25 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:09:05 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('5')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:09:05 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('5')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:10:45 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('5')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:16:42 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:16:42 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:17:03 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 04:17:03 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 05:50:55 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 05:50:55 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 05:53:12 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 05:55:43 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(93): CodeIgniter\HTTP\Files\UploadedFile->move('aud/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('2')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 06:00:29 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\pait\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('4')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-12-03 07:28:35 --> syntax error, unexpected token "[", expecting variable or "{" or "$"
+#0 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(77): view('exercise/latiha...', Array)
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->soal()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-12-03 07:28:36 --> syntax error, unexpected token "[", expecting variable or "{" or "$"
+#0 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(77): view('exercise/latiha...', Array)
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->soal()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

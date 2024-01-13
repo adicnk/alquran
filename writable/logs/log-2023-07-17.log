@@ -1,0 +1,40 @@
+ERROR - 2023-07-17 05:39:01 --> Not unique table/alias: 'soal'
+CRITICAL - 2023-07-17 05:39:01 --> Not unique table/alias: 'soal'
+#0 C:\xampp\htdocs\snbt\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(125): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(167): App\Models\SoalMDL->reSortIdx()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#8 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-17 07:16:46 --> Attempt to read property "id" on array
+#0 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 131)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(168): App\Models\SoalMDL->reSortIdx()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-17 08:43:19 --> Call to a member function getResult() on array
+#0 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(168): App\Models\SoalMDL->reSortIdx()
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-07-17 08:49:16 --> Attempt to read property "id" on array
+#0 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(168): App\Models\SoalMDL->reSortIdx()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

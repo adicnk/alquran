@@ -1,0 +1,55 @@
+There are many free text-to-speech (TTS) tools available online. Here are five popular ones:
+
+NaturalReader: NaturalReader is a free TTS tool that can read any text on your computer screen. You can adjust the speed and volume of the voice, as well as choose from a variety of voices.
+
+Balabolka: Balabolka is a free TTS tool that supports a wide range of formats, including TXT, PDF, DOC, EPUB, and more. It also allows you to customize the voice, speed, and volume.
+
+Panopreter Basic: Panopreter Basic is a free TTS tool that can read aloud text files, web pages, and emails. It supports multiple languages and voices, and allows you to adjust the speed and volume.
+
+eSpeak: eSpeak is a compact TTS engine that can be used as a command-line tool or integrated into other programs. It supports multiple languages and voices, and can be customized to meet specific needs.
+
+Text-to-Speech-Robot: Text-to-Speech-Robot is a free online TTS tool that can read any text aloud. It supports multiple languages and voices, and allows you to adjust the speed and volume of the voice.
+
+
+Here are five popular text-to-speech (TTS) tools that support the Indonesian language:
+
+Google Text-to-Speech: Google Text-to-Speech is a TTS engine that supports Indonesian language. It can be used with any app that uses TTS functionality, and it allows you to adjust the speed and pitch of the voice.
+
+iSpeech: iSpeech is a TTS tool that offers a free online Indonesian text-to-speech service. It supports multiple languages and voices, and allows you to adjust the speed and volume of the voice.
+
+Loquendo TTS: Loquendo TTS is a TTS tool that supports Indonesian language. It offers natural-sounding voices and allows you to customize the voice, speed, and volume.
+
+ResponsiveVoice: ResponsiveVoice is a TTS tool that supports Indonesian language. It offers a variety of voices and allows you to adjust the speed and volume of the voice. It also offers a free plan for personal use.
+
+ReadSpeaker: ReadSpeaker is a TTS tool that supports Indonesian language. It offers high-quality voices and allows you to customize the voice, speed, and volume. It also offers a free trial for personal use.
+
+
+There are various tools and software available that can convert text to video. Here are five popular text-to-video tools:
+
+Lumen5: Lumen5 is a web-based video creation tool that can convert text into engaging videos. It uses artificial intelligence (AI) to automatically match images and video clips with the text to create a visually appealing video. Lumen5 offers a free plan with limited features, as well as paid plans.
+
+Animoto: Animoto is a web-based video creation tool that can turn text, photos, and video clips into professional-looking videos. It offers various customizable video styles and music tracks to enhance your video. Animoto offers a free trial, as well as paid plans.
+
+Renderforest: Renderforest is an online video creation platform that can turn text into high-quality videos using various customizable templates. It offers a drag-and-drop interface and a variety of tools to customize the video to your liking. Renderforest offers a free plan with limited features, as well as paid plans.
+
+Typito: Typito is a web-based video editor that can turn text into engaging videos using customizable templates. It offers a user-friendly interface and a variety of editing tools to create professional-looking videos. Typito offers a free plan with limited features, as well as paid plans.
+
+Adobe Spark Video: Adobe Spark Video is a web-based video creation tool that can turn text into compelling videos. It offers various customizable templates, text animations, and music tracks to enhance your video. Adobe Spark Video offers a free plan with limited features, as well as paid plans.
+
+
+
+Here are five popular text-to-video tools that support the Indonesian language:
+
+Vidioh: Vidioh is a video creation tool that supports the Indonesian language. It allows you to turn text into videos using customizable templates and a drag-and-drop interface. It also offers a variety of images, video clips, and music tracks to enhance your video.
+
+Animaker: Animaker is a web-based video creation platform that supports the Indonesian language. It offers customizable templates, text animations, and music tracks to create engaging videos. It also allows you to upload your own images and video clips.
+
+Moovly: Moovly is a video creation tool that supports the Indonesian language. It offers customizable templates and a drag-and-drop interface to create professional-looking videos. It also allows you to upload your own images and video clips.
+
+Powtoon: Powtoon is a web-based video creation tool that supports the Indonesian language. It offers customizable templates, text animations, and music tracks to create engaging videos. It also allows you to upload your own images and video clips.
+
+Kapwing: Kapwing is a video creation platform that supports the Indonesian language. It offers customizable templates and a variety of editing tools to create professional-looking videos. It also allows you to add subtitles and captions to your video. Kapwing offers a free plan with limited features, as well as paid plans.
+
+
+
+

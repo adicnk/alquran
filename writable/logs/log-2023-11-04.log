@@ -1,0 +1,3 @@
+CRITICAL - 2023-11-04 17:03:02 --> Cannot redeclare App\Controllers\Exercise::beli()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

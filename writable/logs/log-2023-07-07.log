@@ -1,0 +1,97 @@
+CRITICAL - 2023-07-07 11:25:03 --> Undefined array key "soal_id"
+#0 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(65): App\Models\SoalMDL->getSoalID('8')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('8')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 11:26:56 --> unlink(img/9.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/9.pn...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/9.png')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('8')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 11:45:30 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('6')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-07-07 11:55:58 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 11:59:36 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('6')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 13:09:11 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('6')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 13:10:09 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('6')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 13:13:36 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('7')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 13:15:05 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(87): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('7')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 14:07:51 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(88): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('7')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-07 14:10:44 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(88): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('7')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

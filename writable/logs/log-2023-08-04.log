@@ -1,0 +1,62 @@
+CRITICAL - 2023-08-04 07:24:44 --> Undefined variable $soal
+#0 C:\xampp\htdocs\snbt\app\Controllers\LatihanPaket.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 64)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\LatihanPaket->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LatihanPaket))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-08-04 08:16:31 --> Undefined variable $total
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\latihan-fp.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(215): view('exercise/latiha...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->latihanFP()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-04 08:16:40 --> Undefined variable $total
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\latihan-fp.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(215): view('exercise/latiha...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->latihanFP()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-08-04 14:14:12 --> Unclosed '[' does not match ')'
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\LatihanPaket.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\LatihanPaket->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-04 14:15:35 --> Unclosed '[' does not match ')'
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Exercise->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-08-04 14:15:41 --> Unclosed '[' does not match ')'
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Exercise->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

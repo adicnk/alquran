@@ -1,0 +1,37 @@
+- Edit the httpd.conf at C:\xampp\apache\conf
+
+NameVirtualHost *:80
+<VirtualHost *:80>
+    ServerAdmin postmaster@localhost
+    ServerName localhost:80
+
+	 <Directory />
+		AllowOverride none
+		Require all denied
+	</Directory>
+
+	DocumentRoot "C:/xampp/htdocs"
+	<Directory "C:/xampp/htdocs">
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin postmaster@pait.stikep-ppnijabar.ac.id
+    ServerName pait.stikep-ppnijabar.ac.id:80
+
+	DocumentRoot "C:/xampp/htdocs/pait"
+	<Directory "C:/xampp/htdocs/pait">
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+- (Optonal) Edit the httpd-vhosts.conf at C:\xampp\apache\conf\extra
+- Edut hosts at C:\Windows\System32\drivers\etc
+
+127.0.0.1 localhost
+127.0.0.1 pait.stikep-ppijabar.ac.id

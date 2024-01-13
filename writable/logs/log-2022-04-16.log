@@ -1,0 +1,645 @@
+CRITICAL - 2022-04-16 03:01:44 --> Undefined property: App\Controllers\Exercise::$configMDL
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 03:04:51 --> Undefined property: App\Controllers\Exercise::$configMDL
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 03:05:28 --> Undefined property: App\Controllers\Exercise::$configMDL
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-04-16 03:05:55 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-04-16 03:05:55 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\pait\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pait\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pait\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pait\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pait\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pait\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pait\app\Models\ConfigMDL.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(26): App\Models\ConfigMDL->totalSoal()
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#9 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#10 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-04-16 04:09:22 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\pait\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('exercise/latiha...')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('exercise/latiha...')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 05:13:23 --> Array to string conversion
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 06:10:40 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:12:28 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:13:41 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:14:55 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:16:34 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:21:58 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:23:23 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:34:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:36:34 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:51:30 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 06:54:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:22:31 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:23:59 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:25:56 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:36:37 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:40:48 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:43:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:44:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:55:25 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 07:55:25 --> Undefined array key ""
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(1, Array, '3', NULL)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:55:26 --> Undefined array key ""
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(3, Array, '3', NULL)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:55:35 --> Undefined array key 3
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(3, Array, '3', 3)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:56:07 --> Undefined array key 3
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(2, Array, '3', 3)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:56:41 --> Undefined array key 3
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 62)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(3, Array, '3', 3)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:57:19 --> Undefined array key ""
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): App\Controllers\Exercise->searchID(3, Array, '3', NULL)
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-16 07:59:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:03:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:04:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:05:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:06:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:07:17 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:08:31 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:10:21 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:11:25 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:13:27 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 08:49:39 --> Too few arguments to function App\Controllers\Exercise::searchID(), 1 passed in C:\xampp\htdocs\pait\app\Controllers\Exercise.php on line 38 and exactly 2 expected
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(38): App\Controllers\Exercise->searchID(Array)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 09:29:23 --> Undefined variable $randID
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 09:58:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:05:50 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:15:02 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:16:21 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:18:18 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:19:51 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:22:23 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:25:55 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:33:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 10:34:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-16 18:39:25 --> Undefined property: App\Controllers\Admin::$loginModel
+#0 C:\xampp\htdocs\pait\app\Controllers\Admin.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 167)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 18:41:36 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('name', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(169): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:43:07 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(169): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:43:26 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(169): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:47:07 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(174): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:47:27 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(174): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:48:31 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:50:50 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(174): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 18:51:07 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\pait\system\Model.php on line 728
+#0 C:\xampp\htdocs\pait\system\Model.php(728): CodeIgniter\Database\BaseBuilder->like('username', NULL)
+#1 C:\xampp\htdocs\pait\app\Models\LoginMDL.php(41): CodeIgniter\Model->__call('like', Array)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(174): App\Models\LoginMDL->statusLogin(NULL, '')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:01:27 --> Undefined variable $title
+#0 C:\xampp\htdocs\pait\app\Views\admin\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('admin/dashboard')
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 19:02:24 --> Invalid file: admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:02:53 --> Invalid file: /admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:03:07 --> Invalid file: /admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:03:56 --> Undefined variable $title
+#0 C:\xampp\htdocs\pait\app\Views\admin\login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin/login', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/admin/login')
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 19:04:20 --> Invalid file: ../admin/login.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../admin/login....')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('../admin/login', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('../admin/login')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:04:36 --> Invalid file: ../../admin/login.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../../admin/log...')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('../../admin/log...', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('../../admin/log...')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:04:55 --> Invalid file: .././../admin/login.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.././../admin/l...')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('.././../admin/l...', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('.././../admin/l...')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:07:08 --> Invalid file: admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:07:29 --> Invalid file: admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:07:52 --> Invalid file: /admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:08:08 --> Invalid file: /admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/admin')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:08:39 --> Invalid file: /.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(171): view('/')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:09:35 --> Undefined variable $title
+#0 C:\xampp\htdocs\pait\app\Views\admin\login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin/login', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('/admin/login')
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 19:10:00 --> Undefined variable $title
+#0 C:\xampp\htdocs\pait\app\Views\admin\login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin/login', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('/admin/login')
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 19:11:11 --> Invalid file: /admin.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin.php')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('/admin', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('/admin', Array)
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:32:10 --> Invalid file: ../admin/login.php
+#0 C:\xampp\htdocs\pait\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../admin/login....')
+#1 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('../admin/login', Array, true)
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(191): view('../admin/login', Array)
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->relogin()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-16 19:50:46 --> Undefined variable $url
+#0 C:\xampp\htdocs\pait\app\Views\Form\relogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('form/relogin', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('form/relogin', Array)
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 19:51:49 --> Undefined variable $url
+#0 C:\xampp\htdocs\pait\app\Views\template\delete-soal.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\View\View.php(226): CodeIgniter\View\View->render('template/delete...', Array, true)
+#4 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('form/relogin', Array, true)
+#5 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('form/relogin', Array)
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-04-16 19:52:06 --> Undefined variable $url
+#0 C:\xampp\htdocs\pait\app\Views\template\delete-soal.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\View\View.php(226): CodeIgniter\View\View->render('template/delete...', Array, true)
+#4 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('form/relogin', Array, true)
+#5 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('form/relogin', Array)
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-04-16 19:55:19 --> Undefined variable $url
+#0 C:\xampp\htdocs\pait\app\Views\template\delete-soal.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\View\View.php(226): CodeIgniter\View\View->render('template/delete...', Array, true)
+#4 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('form/relogin', Array, true)
+#5 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('form/relogin', Array)
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-04-16 19:55:29 --> Undefined variable $url
+#0 C:\xampp\htdocs\pait\app\Views\template\delete-soal.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 57)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\View\View.php(226): CodeIgniter\View\View->render('template/delete...', Array, true)
+#4 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('form/relogin', Array, true)
+#5 C:\xampp\htdocs\pait\app\Controllers\Admin.php(175): view('form/relogin', Array)
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-04-16 20:19:18 --> Undefined variable $totalAdmin
+#0 C:\xampp\htdocs\pait\app\Views\admin\dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\pait\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pait\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\pait\system\Common.php(1089): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#4 C:\xampp\htdocs\pait\app\Controllers\Admin.php(184): view('admin/dashboard', Array)
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-16 20:42:38 --> Call to undefined method CodeIgniter\Session\Session::sessionExpiration()
+#0 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 20:48:59 --> Call to undefined method CodeIgniter\Session\Session::sessionExpiration()
+#0 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 20:49:45 --> Call to undefined method CodeIgniter\Session\Session::sessionExpiration()
+#0 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 20:50:00 --> Call to undefined method CodeIgniter\Session\Session::sessionExpiration()
+#0 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-16 22:26:16 --> Call to undefined method App\Models\SoalMDL::isChoosen
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(29): CodeIgniter\Model->__call('isChoosen', Array)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 22:29:41 --> Array to string conversion
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 23:07:58 --> Call to undefined method App\Models\SoalMDL::search
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(31): CodeIgniter\Model->__call('search', Array)
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->latihan()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-16 23:41:48 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\pait\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('exercise/latiha...')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('exercise/latiha...')
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

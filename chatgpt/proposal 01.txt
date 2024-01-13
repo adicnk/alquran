@@ -1,0 +1,6 @@
+The first thing to do is collect the KPI data that you want to present on the website. The second phase is to process your data using MVC (Model, View, and Controller) to make data into ready to use program. After that trace the major or minor error for your program. Once ready, you can upload the program into your hosting to make it online.
+
+Here is the example demo website that I make:
+https://pos.devinc.website/
+https://anggaran.devinc.website/
+https://pait.devinc.website/

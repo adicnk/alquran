@@ -1,0 +1,57 @@
+ERROR - 2023-07-04 06:03:31 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-07-04 06:03:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\snbt\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\snbt\app\Models\UserMDL.php(55): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(75): App\Models\UserMDL->statusLogin('demo', 'demo')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->login()
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#8 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-07-04 06:03:36 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-07-04 06:03:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\snbt\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\snbt\app\Models\UserMDL.php(55): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(75): App\Models\UserMDL->statusLogin('demo', 'demo')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->login()
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#8 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-04 06:08:24 --> unlink(img/5.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/5.pn...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/5.png')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('5')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-04 06:08:24 --> unlink(img/5.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/5.pn...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/5.png')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('5')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-07-04 06:08:24 --> unlink(img/5.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/5.pn...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/5.png')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('5')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

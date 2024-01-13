@@ -1,0 +1,48 @@
+CRITICAL - 2023-06-16 06:52:03 --> Undefined array key "paket"
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\belajar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/belaja...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(184): view('exercise/belaja...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->belajar()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-16 06:53:14 --> Undefined array key "paket"
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\belajar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/belaja...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(184): view('exercise/belaja...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->belajar()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-16 08:16:57 --> Undefined array key "jurusan"
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\profile.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/profil...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(194): view('exercise/profil...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-16 08:16:57 --> Undefined array key "jurusan"
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\profile.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/profil...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(194): view('exercise/profil...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

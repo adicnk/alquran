@@ -1,0 +1,117 @@
+CRITICAL - 2023-06-30 16:12:49 --> Undefined array key -1
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\latihan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(116): view('exercise/latiha...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-30 17:00:07 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\latihan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(116): view('exercise/latiha...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-30 17:47:25 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 17:48:29 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 17:50:37 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 17:51:52 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 18:32:07 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 18:34:17 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 18:34:46 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 18:35:53 --> Undefined array key 2
+#0 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-30 19:01:34 --> Array to string conversion
+#0 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 80)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(75): App\Models\SoalMDL->searchJawabanSoalIdx(1, 2)
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-30 16:52:07 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Exercise->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-30 16:52:07 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Exercise.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Exercise->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

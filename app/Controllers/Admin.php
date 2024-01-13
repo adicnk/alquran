@@ -3,269 +3,224 @@
 namespace App\Controllers;
 
 use App\Models\UserMDL;
-use App\Models\UserInfoMDL;
-use App\Models\SchoolMDL;
-use App\Models\EventMDL;
-use App\Models\ContentMDL;
-use App\Models\ClassMDL;
+use App\Models\SoalMDL;
+use App\Models\ChartPieMDL;
+use App\Models\ConfigMDL;
+use App\Models\LoginMDL;
+use App\Models\KategoriMDL;
+use App\Models\UserSubcribeMDL;
+use App\Models\UserSubcribeMDLMDL;
 
 class Admin extends BaseController
 {
+    protected $userModel, $chartPieModel, $soalModel, $configModel, $loginModel, $kategoriModel, $userSubcribeModel;
 
-	protected $userModel, $userInfoModel, $schoolModel, $eventModel, $contentModel, $classModel;
+    public function __construct()
+    {
+        $this->userModel = new UserMDL();
+        $this->soalModel = new SoalMDL();
+        $this->chartPieModel = new ChartPieMDL();
+        $this->configModel = new ConfigMDL();
+        $this->loginModel = new LoginMDL();
+        $this->kategoriModel = new KategoriMDL();
+        $this->userSubcribeModel = new UserSubcribeMDL();
+    }
 
-	public function __construct()
-	{
-		$this->userModel = new UserMDL();
-		$this->userInfoModel = new UserInfoMDL();
-		$this->schoolModel = new SchoolMDL();
-		$this->eventModel = new EventMDL();
-		$this->contentModel = new ContentMDL();
-		$this->classModel = new ClassMDL();
-	}
+    public function index($links = false)
+    {
+        //Akses from side menu
+        //======================
+        if ($links) {
+            switch ($links) {
+                case "user":
+                    // d($this->request->getVar('keyword'));                    
+                    $user = $this->userModel->searchAdmin();
+                    $title = "Admin List : All";
 
-	public function index()
-	{
-		$data = [
-			'title'   => "Login"
-		];
-		return view('/form/admin-login', $data);
-	}
+                    $currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+                    $data = [
+                        'title' => $title,
+                        'user'  => $this->userModel->paginate(5, 'user'),
+                        'pager' => $this->userModel->pager,
+                        'currentPage' => $currentPage
+                    ];
+                    return view('admin/administrator', $data);
+                    break;
 
-	public function dashboard()
-	{
+                case "mahasiswa":
+                    // d($this->request->getVar('keyword'));
 
-		$data = [
-			'title'   => 'Dashboard Administrator'
-		];
+                    // Search Block
+                    $keyword = $this->request->getVar('keyword');
+                    if ($keyword) {
+                        $user = $this->userModel->searchMahasiswa($keyword);
+                        $title = 'Mahasiswa Name Search : "' . $keyword . '"';
+                    } else {
+                        $user = $this->userModel->searchMahasiswa();
+                        $title = "Mahasiswa List : All";
+                    }
 
-		// this session check put in other folder
-		//  expired time check in 60 * 5 is 5 minute
-		$sessionTime = session()->get('__ci_last_regenerate');
-		if (date('Y/m/d H:i:s', $sessionTime + 60 * 5) > $sessionTime) :
-			return redirect()->to('/admin');
-		endif;
+                    $currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+                    $data = [
+                        'title' => $title,
+                        'user'  => $this->userModel->paginate(5, 'user'),
+                        'pager' => $this->userModel->pager,
+                        'currentPage' => $currentPage
+                    ];
+                    return view('admin/mahasiswa', $data);
+                    break;
 
-		return view('/pages/admin-dashboard', $data);
-	}
+                case "soal":
+                    // Search Block
+                    //$keyword = $this->request->getVar('keyword');
+                    $kategori = $this->request->getVar('kategori');
+                    $soal = $this->soalModel->searchSoal($kategori);
 
-	public function user($id)
-	{
+                    $currentPage = $this->request->getVar('page_soal') ? $this->request->getVar('page_soal') : 1;
+                    $data = [
+                        'soal'  => $this->soalModel->paginate(5, 'soal'),
+                        'kategori' => $this->kategoriModel->findAll(),
+                        'pager' => $this->soalModel->pager,
+                        'currentPage' => $currentPage
+                    ];
+                    
+                    return view('admin/soal', $data);
+                    break;
+                case 'dashboard':
+                    $data = [
+                        'title'   => "Dashboard",
+                        'totalAdmin' => $this->userModel->countAdmin(),
+                        'totalMahasiswa' => $this->userModel->countMahasiswa(),
+                        'totalStaff' => $this->userModel->countStaff(),
+                        'totalSoalUjian' => $this->soalModel->countAllUjian(),
+                        'chartValueData' => $this->chartPieModel->getTotalSoal(),
+                        'chartLabelData' => $this->chartPieModel->getLabelSoal()
+                    ];
+                    return view('admin/dashboard', $data);
+                    break;
+                case 'belipaket':
+                    $currentPage = 1;
+                    $data = [
+                        'title' => 'User Request',
+                        'user_subcribe'  => $this->userSubcribeModel ->paginate(5, 'user_subcribe'),
+                        'pager' => $this->userSubcribeModel->pager,
+                        'currentPage' => $currentPage
 
-		$data = [
-			'title'   => 'Dashboard Administrator',
-			'event'  => $this->eventModel->search($id)
-		];
+                    ];
+                    return view('admin/request', $data);    
+                    break;
+            }
+        }
+    }
 
-		return view('/pages/admin-wait-user', $data);
-	}
 
-	public function mahasiswa($id = false)
-	{
-		if ($id) :
-			$this->userModel->setRecovery($id);
-			$user = $this->userModel->getUserByID($id);
-			foreach ($user as $usr) :
-				session()->setFlashdata('message', $usr['name'] . ' berhasil di recovery');
-			endforeach;
-			return redirect()->to('/admin/mahasiswa');
-		endif;
+    //Akses from admin/user cari button
+    //=================================
+    public function user()
+    {
+        $keyword = $this->request->getVar('keyword');
+        $user = $this->userModel->searchAdmin($keyword);
+        if ($keyword) {
+            $title = 'Admin Name Search : "' . $keyword . '"';
+        } else {
+            $title = 'Admin List : All';
+        }
+        $currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+        $data = [
+            'title' => $title,
+            'user'  => $this->userModel->paginate(5, 'user'),
+            'pager' => $this->userModel->pager,
+            'currentPage' => $currentPage
+        ];
+        return view('admin/administrator', $data);
+    }
 
-		// Search Block
-		$keyword = $this->request->getVar('keyword');
-		if ($keyword) {
-			$userInfo = $this->userInfoModel->search($keyword);
-			$title = "User NIM Search : " . $keyword;
-			$filter = 0;
-		} else {
-			// Filter Block
-			$filter = $this->request->getVar('filter-class');
-			if (!$filter == 0) {
-				$userInfo = $this->userInfoModel->filter($filter);
-				$className = $this->classModel->getClass($filter);
-				foreach ($className as $cn) :
-					$title = "Prodi Search : " . $cn['name'];
-				endforeach;
-			} else {
-				$userInfo = $this->userInfoModel->search();
-				$title = "User List : All";
-			}
-		}
+    public function mahasiswa()
+    {
+        $keyword = $this->request->getVar('keyword');
+        $user = $this->userModel->searchMahasiswa($keyword);
+        if ($keyword) {
+            $title = 'Mahasiswa Name Search : "' . $keyword . '"';
+        } else {
+            $title = 'Mahasiswa List : All';
+        }
+        $currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+        $data = [
+            'title' => $title,
+            'user'  => $this->userModel->paginate(5, 'user'),
+            'pager' => $this->userModel->pager,
+            'currentPage' => $currentPage
+        ];
+        return view('admin/mahasiswa', $data);
+    }
 
-		// Pagination
-		$paginate = $this->userInfoModel->paginate(10, 'user');
-		$pager = $this->userInfoModel->pager;
-		// Making the count number properly
-		$currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+    public function soal()
+    {
+        //$keyword = $this->request->getVar('keyword');
+        $kategori = $this->request->getVar('kategori');
+        $currentPage = $this->request->getVar('page_soal') ? $this->request->getVar('page_soal') : 1;
+        $data = [
+            'soal'  => $this->soalModel->paginate(5, 'soal'),
+            'kategori' => $this->kategoriModel->findAll(),
+            'pager' => $this->soalModel->pager,
+            'currentPage' => $currentPage
+        ];
+        return view('admin/soal', $data);
+    }
 
-		$data = [
-			'title'     => $title,
-			'user'  => $paginate,
-			'pager' => $pager,
-			'currentPage'   => $currentPage,
-			'keyword' => $keyword,
-			'content'  => false,
-			'filter' => $filter
-		];
+    public function login()
+    {
+        $usr = $this->request->getVar('username');
+        $pwd = $this->request->getVar('password');
 
-		return view('/list/mahasiswa', $data);
-	}
+        if (!$usr or !$pwd) {
+            $data = [
+                'title' => 'Login Status',
+                'login' => $this->loginModel->index()
+            ];
+            return view('form/relogin', $data);
+        } else {
+            $loginStatus = $this->loginModel->statusLogin($usr, $pwd);
+            $data = [
+                'title'   => "Dashboard",
+                'totalAdmin' => $this->userModel->countAdmin(),
+                'totalMahasiswa' => $this->userModel->countMahasiswa(),
+                'totalStaff' => $this->userModel->countStaff(),
+                'totalSoal' => $this->soalModel->countAll(),
+                'chartValueData' => $this->chartPieModel->getTotalSoal(),
+                'chartLabelData' => $this->chartPieModel->getLabelSoal()
+            ];
 
-	public function administrator()
-	{
-		// Search Block
-		$keyword = $this->request->getVar('keyword');
-		if ($keyword) {
-			$userInfo = $this->userInfoModel->searchAdmin($keyword);
-			$title = "Admin Search : " . $keyword;
-		} else {
-			$userInfo = $this->userInfoModel->searchAdmin();
-			$title = "Admin List : All";
-		}
+            if ($loginStatus) {
+                return view('form/getdashboard', $data);
+            } else {
+                $data = [
+                    'title' => 'Login Status',
+                    'login' => $this->loginModel->index()
+                ];
+                return view('form/relogin', $data);
+            }
+        }
+    }
 
-		// Pagination
-		$paginate = $this->userInfoModel->paginate(10, 'user');
-		$pager = $this->userInfoModel->pager;
-		// Making the count number properly
-		$currentPage = $this->request->getVar('page_user') ? $this->request->getVar('page_user') : 1;
+    public function daftar(){       
+        $data = [
+            'title' => "Daftar Pengguna Baru Latihan Soal Keperawatan",
+            'validation'=> \Config\Services::validation()
+        ];
+        //dd($data);
+        return view('form/daftar', $data);        
+    }
+    
+    public function gmail(){
+        $data = [
+            'title' => "Gmail"
+        ];
+        return view('admin/gmail', $data);        
+    }
 
-		$data = [
-			'title'     => $title,
-			'user'  => $paginate,
-			'pager' => $pager,
-			'currentPage'   => $currentPage,
-			'keyword' => $keyword,
-			'content'  => false
-		];
+    public function bayarpaket(){
 
-		return view('/list/administrator', $data);
-	}
+    }
 
-	public function jadwal()
-	{
-		// Search Block
-		$filter = 0;
-		$subjects = 0;
-		$keyword = $this->request->getVar('keyword');
-		if ($keyword) {
-			$userInfo = $this->eventModel->search($keyword);
-			$title = "Jadwal Name Search : " . $keyword;
-		} else {
-
-			// Filter Block
-			$filter = $this->request->getVar('filter-kategori');
-			if (!$filter == 0) {
-				if ($filter == 2) {
-					$subjects = $this->request->getVar('filter-subjects');
-					$userInfo = $this->eventModel->searchCategory($filter, $subjects);
-				} else {
-					$userInfo = $this->eventModel->searchCategory($filter);
-				}
-				$title = "Kategori Search : Unavailable";
-			} else {
-				$userInfo = $this->eventModel->search();
-				$title = "Jadwal List : All";
-			}
-		}
-
-		// Pagination
-		$paginate = $this->eventModel->paginate(5, 'event');
-		$pager = $this->eventModel->pager;
-		// Making the count number properly
-		$currentPage = $this->request->getVar('page_event') ? $this->request->getVar('page_event') : 1;
-
-		$data = [
-			'title'     => $title,
-			'event'  => $paginate,
-			'pager' => $pager,
-			'currentPage'   => $currentPage,
-			'keyword' => $keyword,
-			'content'  => false,
-			'filter' => $filter,
-			'subjects' => $subjects
-		];
-
-		return view('/list/jadwal', $data);
-	}
-
-	public function materi()
-	{
-		// Search Block
-		$filter = 0;
-		$keyword = $this->request->getVar('keyword');
-		if ($keyword) {
-			$content = $this->contentModel->search($keyword);
-			$title = "Materi Search : " . $keyword;
-		} else {
-			// Filter Block
-			$filter = $this->request->getVar('filter-class');
-			if (!$filter == 0) {
-				$content = $this->contentModel->searchClass($filter);
-				$className = $this->classModel->getClass($filter);
-				foreach ($className as $cn) :
-					$title = "Prodi Search : " . $cn['name'];
-				endforeach;
-			} else {
-				$content = $this->contentModel->search();
-				$title = "Materi List : All";
-			}
-		}
-
-		// Pagination
-		$paginate = $this->contentModel->paginate(5, 'content');
-		$pager = $this->contentModel->pager;
-		// Making the count number properly
-		$currentPage = $this->request->getVar('page_content') ? $this->request->getVar('page_content') : 1;
-
-		$data = [
-			'title'     => $title,
-			'content'  => $paginate,
-			'pager' => $pager,
-			'currentPage' => $currentPage,
-			'keyword' => $keyword,
-			'filter' => $filter
-		];
-
-		return view('/list/materi', $data);
-	}
-
-	public function active($id)
-	{
-		$this->userModel->setActive($id);
-		return redirect()->to('../admin');
-	}
-
-	public function submit()
-	{
-		$userEmail = $this->request->getVar('email');
-		$userPassword = $this->request->getVar('password');
-
-		$authLogin = $this->userModel->authLoginAdmin($userEmail, $userPassword); //is user correct
-
-		if (!$authLogin) {
-			// Menambahkan flash message di menu jika authorisasi gagal
-			session()->setFlashdata('message', 'Username atau Password anda salah');
-			return redirect()->to('/admin');
-		}
-
-		$data = [
-			'title'   => 'Administrator',
-			'school' => $this->schoolModel->getSchool(1),
-			'useradmin' => $this->userModel->getUserAdmin($userEmail)
-		];
-
-		session()->set($data);
-		return redirect()->to('../admin/dashboard');
-	}
-
-	public function logout()
-	{
-		session()->destroy(); // Initialize clear all session
-
-		$data = [
-			'title' => "Login"
-		];
-
-		return redirect()->to('/admin');
-	}
 }

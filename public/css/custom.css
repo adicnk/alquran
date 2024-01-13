@@ -1,0 +1,69 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bawah {
+    color: red;
+}
+
+.card-text {
+    font-size: larger;
+}
+
+.box-fire {
+    border: 1px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(245, 144, 11);
+}
+
+.box-red {
+    border: 1px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(245, 11, 11);
+}
+
+.box-green {
+    border: 1px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(50, 245, 11);
+}
+
+hr.garis1{
+    border:5px solid green;
+    border-radius:1px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}

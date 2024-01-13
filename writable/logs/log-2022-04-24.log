@@ -1,0 +1,103 @@
+ERROR - 2022-04-24 01:04:33 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-04-24 01:04:33 --> Column 'id' in where clause is ambiguous
+#0 C:\xampp\htdocs\pait\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pait\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pait\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pait\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pait\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pait\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pait\app\Models\UserMDL.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pait\app\Controllers\Profile.php(22): App\Models\UserMDL->searhAdminID('1')
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Profile->index()
+#9 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#10 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-04-24 01:33:39 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result / int
+#0 C:\xampp\htdocs\pait\app\Controllers\Profile.php(25): App\Models\LatihanMDL->nilaiRatarata('1')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Profile->index()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 01:34:37 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result / int
+#0 C:\xampp\htdocs\pait\app\Controllers\Profile.php(25): App\Models\LatihanMDL->nilaiRatarata('1')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Profile->index()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 01:35:40 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result / int
+#0 C:\xampp\htdocs\pait\app\Controllers\Profile.php(25): App\Models\LatihanMDL->nilaiRatarata('1')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Profile->index()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 01:47:40 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result / int
+#0 C:\xampp\htdocs\pait\app\Controllers\Profile.php(25): App\Models\LatihanMDL->nilaiRatarata('1')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Profile->index()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 12:35:44 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\pait\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('login.id', true, false, 'AND ', NULL)
+#1 C:\xampp\htdocs\pait\system\Model.php(290): CodeIgniter\Database\BaseBuilder->whereIn('login.id', true)
+#2 C:\xampp\htdocs\pait\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(true, Array)
+#3 C:\xampp\htdocs\pait\system\Model.php(651): CodeIgniter\BaseModel->update(true, Array)
+#4 C:\xampp\htdocs\pait\system\BaseModel.php(656): CodeIgniter\Model->update(true, Array)
+#5 C:\xampp\htdocs\pait\app\Controllers\SubmitEdit.php(51): CodeIgniter\BaseModel->save(Array)
+#6 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->admin('1')
+#7 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#8 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-04-24 13:38:59 --> Division by zero
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(202): App\Models\LatihanMDL->nilaiRatarata('4')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 13:40:58 --> Division by zero
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(202): App\Models\LatihanMDL->nilaiRatarata('4')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 13:41:09 --> Division by zero
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(202): App\Models\LatihanMDL->nilaiRatarata('4')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 13:44:10 --> Call to undefined function App\Models\findAll()
+#0 C:\xampp\htdocs\pait\app\Controllers\Exercise.php(202): App\Models\LatihanMDL->nilaiRatarata('4')
+#1 C:\xampp\htdocs\pait\system\CodeIgniter.php(832): App\Controllers\Exercise->profile()
+#2 C:\xampp\htdocs\pait\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Exercise))
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-24 19:11:33 --> syntax error, unexpected token "}", expecting ";"
+#0 C:\xampp\htdocs\pait\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\pait\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 C:\xampp\htdocs\pait\app\Controllers\Admin.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 C:\xampp\htdocs\pait\system\CodeIgniter.php(809): App\Controllers\Admin->__construct()
+#4 C:\xampp\htdocs\pait\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\pait\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pait\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pait\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

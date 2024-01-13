@@ -8,10 +8,10 @@ $routes = Services::routes();
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
 if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
-	require SYSTEMPATH . 'Config/Routes.php';
+    require SYSTEMPATH . 'Config/Routes.php';
 }
 
-/**
+/*
  * --------------------------------------------------------------------
  * Router Setup
  * --------------------------------------------------------------------
@@ -23,68 +23,59 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-/**
+/*
  * --------------------------------------------------------------------
  * Route Definitions
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
-// Ujian
-$routes->get('/', 'Login::index');
-$routes->get('/ujian', 'Ujian::index');
-$routes->get('/ujian/(:num)', 'Ujian::index/$1');
-$routes->get('/score', 'Ujian::score');
-$routes->get('/jawaban', 'Jawaban::index');
-$routes->get('/jawaban/(:num)', 'Jawaban::index/$1');
+// For Admin Route
 
-//Admin
-$routes->get('/admin', 'Admin::index');
-$routes->get('/dashboard', 'Admin::dashboard');
-
-// Download
-$routes->get('/download', 'Download::index');
-
-// Mahasiswa
-$routes->get('/mahasiswa', 'Admin::mahasiswa');
-$routes->get('/mahasiswa/update/(:num)', 'Form::update/$1');
-$routes->get('/mahasiswa/active/(:num)', 'Active::mahasiswa/$1');
-$routes->get('/mahasiswa/delete', 'Delete::mahasiswa');
-$routes->get('/mahasiswa/delete/(:num)', 'Delete::mahasiswa/$1');
-$routes->get('/mahasiswa/edit/(:num)', 'Edit::mahasiswa/$1');
-$routes->get('/mahasiswa/(:num)', 'Admin::mahasiswa/$1');
-
-// Administrator
-$routes->get('/administrator', 'Admin::administrator');
-$routes->get('/administrator/update/(:num)', 'Form::update/$1');
-$routes->get('/administrator/active/(:num)', 'Active::administrator/$1');
-$routes->get('/administrator/delete', 'Delete::administrator');
-$routes->get('/administrator/delete/(:num)', 'Delete::administrator/$1');
-$routes->get('/administrator/edit/(:num)', 'Edit::administrator/$1');
-
-// Jadwal
-$routes->get('/jadwal', 'Admin::jadwal');
-$routes->get('/jadwal/update/(:num)', 'Form::update/$1');
-$routes->get('/jadwal/active/(:num)', 'Active::jadwal/$1');
-$routes->get('/jadwal/delete', 'Delete::jadwal');
-$routes->get('/jadwal/delete/(:num)', 'Delete::jadwal/$1');
-$routes->get('/jadwal/edit/(:num)', 'Edit::jadwal/$1');
-$routes->get('/jadwal/user/(:num)', 'Admin::user/$1');
-
-// Materi
-$routes->get('/materi', 'Admin::materi');
-$routes->get('/materi/update/(:num)', 'Form::update/$1');
-$routes->get('/materi/active/(:num)', 'Active::materi/$1');
-$routes->get('/materi/delete', 'Delete::materi');
-$routes->get('/materi/delete/(:num)', 'Delete::materi/$1');
-$routes->get('/materi/edit/(:num)', 'Edit::materi/$1');
-
-// Schedule
-$routes->get('/history', 'History::index');
+$routes->get('/admin', 'Login::admin');
+$routes->get('/admin/(:segment)', 'Admin::index/$1');
 
 
-/**
+$routes->get('edit/admin/(:num)', 'Edit::admin/$1');
+
+$routes->get('form/admin', 'Form::admin');
+$routes->get('form/soal', 'Form::soal');
+
+$routes->get('edit/user/(:num)', 'Edit::user/$1');
+$routes->get('edit/soal/(:num)/(:num)', 'Edit::soal/$1/$2');
+
+$routes->get('submit/admin', 'Submit::admin');
+$routes->get('submitedit/admin/(:num)', 'Submit::admin/$1');
+$routes->get('submit/soal', 'Submit::soal');
+$routes->get('submitEdit/soal/(:num)/(:num)', 'Submit::soal/$1/$2');
+$routes->get('/submit/review', 'Review::index');
+$routes->get('submit/pesan/(:num)', 'Submit::pesan/$1');
+$routes->get('submit/confirm/(:num)', 'Submit::confirm/$1');
+
+$routes->get('delete/soal/(:num)/(:num)', 'Delete::soal/$1/$2');
+
+$routes->get('delete/admin/(:num)', 'Delete::user/$1');
+
+// For Exercise Route
+$routes->get('/', 'Exercise::index');
+$routes->get('/gmail', 'Admin::gmail');
+$routes->get('/daftar', 'Admin::daftar');
+$routes->get('/dashboard', 'Exercise::dashboard');
+$routes->get('/latihan', 'Exercise::soal');
+$routes->get('/latihanfp', 'Exercise::latihanFP');
+//$routes->get('/latihan/(:segment)', 'Exercise::selesai/$1');
+
+//For Pembelajaran Links
+$routes->get('/belajar', 'Exercise::belajar');
+$routes->get('/profile', 'Exercise::profile');
+$routes->get('/about', 'Exercise::about');
+$routes->get('/info', 'Exercise::info');
+$routes->get('/review', 'Exercise::review');
+$routes->get('/request', 'Exercise::beli');
+$routes->get('/belipaket/(:segment)', 'Exercise::belipaket/$1');
+$routes->get('/confirm', 'Exercise::confirm');
+$routes->get('/bayar(:segment)', 'Bayar::index/$1');
+
+/*
  * --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------
@@ -98,5 +89,5 @@ $routes->get('/history', 'History::index');
  * needing to reload it.
  */
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }

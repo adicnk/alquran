@@ -1,0 +1,88 @@
+CRITICAL - 2023-06-29 16:01:49 --> There is no data to update.
+#0 C:\xampp\htdocs\snbt\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\snbt\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(105): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(165): App\Models\SoalMDL->reIndexSoal()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-29 16:03:47 --> There is no data to update.
+#0 C:\xampp\htdocs\snbt\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\snbt\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(103): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(165): App\Models\SoalMDL->reIndexSoal()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-29 04:54:33 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\snbt\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('submit/soal')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('submit/soal')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-29 16:55:37 --> Call to undefined method App\Controllers\Submit::set()
+#0 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-06-29 17:07:26 --> Call to undefined method App\Models\SoalMDL::reIndexSoal
+#0 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(67): CodeIgniter\Model->__call('reIndexSoal', Array)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('1')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-29 17:12:27 --> There is no data to update.
+#0 C:\xampp\htdocs\snbt\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\snbt\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\snbt\system\BaseModel.php(656): CodeIgniter\Model->update(1, Array)
+#3 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(151): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-29 17:14:40 --> There is no data to update.
+#0 C:\xampp\htdocs\snbt\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\snbt\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\xampp\htdocs\snbt\system\BaseModel.php(656): CodeIgniter\Model->update(2, Array)
+#3 C:\xampp\htdocs\snbt\app\Controllers\Submit.php(151): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-29 19:45:45 --> Undefined constant "App\Controllers\q"
+#0 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-06-29 19:47:44 --> Undefined constant "App\Controllers\q"
+#0 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2023-06-29 19:48:54 --> Undefined constant "App\Controllers\q"
+#0 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Submit->soal()
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Submit))
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

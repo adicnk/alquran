@@ -1,0 +1,257 @@
+CRITICAL - 2023-06-28 14:59:05 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 15:01:55 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 15:14:46 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('3')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 16:16:32 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('11')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 16:27:56 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('12')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 04:30:09 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\snbt\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('submitEdit/soal...')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('submitEdit/soal...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 16:32:07 --> The original file is not a valid file.
+#0 C:\xampp\htdocs\snbt\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(84): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('13')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 17:07:19 --> unlink(img/C:\xampp\tmp\phpE9CA.tmp): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/C:\\x...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/C:\\xampp\\tm...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('21')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 17:08:16 --> unlink(img/C:\xampp\tmp\phpE9CA.tmp): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/C:\\x...', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/C:\\xampp\\tm...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('21')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2023-06-28 18:24:17 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-06-28 18:24:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\snbt\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\snbt\app\Models\SoalMDL.php(29): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(55): App\Models\SoalMDL->searchSoalID('21')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('21')
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#8 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-06-28 18:24:33 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-06-28 18:24:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#3 C:\xampp\htdocs\snbt\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(84): CodeIgniter\BaseModel->paginate(5, 'soal')
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Admin->index('soal')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-06-28 18:24:52 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-06-28 18:24:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#3 C:\xampp\htdocs\snbt\app\Models\UserMDL.php(75): CodeIgniter\Model->countAllResults()
+#4 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(93): App\Models\UserMDL->countAdmin()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Admin->index('dashboard')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-06-28 18:25:23 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-06-28 18:25:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\snbt\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\snbt\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\snbt\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\snbt\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\snbt\app\Models\LoginMDL.php(43): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(178): App\Models\LoginMDL->statusLogin('admin', 'admin')
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Admin->login()
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-28 18:41:05 --> unlink(img/1_1.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/1_1....', 'C:\\xampp\\htdocs...', 60)
+#1 C:\xampp\htdocs\snbt\app\Controllers\Delete.php(60): unlink('img/1_1.png')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Delete->soal('2')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Delete))
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2023-06-28 19:45:02 --> Undefined variable $s
+#0 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 19:45:02 --> Undefined variable $s
+#0 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 07:51:07 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\snbt\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('submitEdit/soal...')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('submitEdit/soal...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 20:13:57 --> Call to undefined method App\Models\SoalMDL::getN
+#0 C:\xampp\htdocs\snbt\app\Controllers\SubmitEdit.php(78): CodeIgniter\Model->__call('getN', Array)
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\SubmitEdit->soal('1')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SubmitEdit))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 08:54:08 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('submitEdit/soal...')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('submitEdit/soal...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-06-28 08:59:07 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Edit.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Edit->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-28 08:59:11 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(18): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Admin->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-28 08:59:14 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(18): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Admin->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-28 08:59:18 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Admin.php(18): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Admin->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-28 22:36:29 --> Undefined array key 3
+#0 C:\xampp\htdocs\snbt\app\Views\exercise\latihan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\snbt\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\snbt\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\snbt\system\Common.php(1089): CodeIgniter\View\View->render('exercise/latiha...', Array, true)
+#4 C:\xampp\htdocs\snbt\app\Controllers\Latihan.php(116): view('exercise/latiha...', Array)
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(832): App\Controllers\Latihan->index()
+#6 C:\xampp\htdocs\snbt\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Latihan))
+#7 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-06-28 11:19:01 --> syntax error, unexpected token "}", expecting ";"
+#0 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\snbt\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Soal...')
+#2 C:\xampp\htdocs\snbt\app\Controllers\Edit.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Soal...')
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(809): App\Controllers\Edit->__construct()
+#4 C:\xampp\htdocs\snbt\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-06-28 11:23:50 --> syntax error, unexpected token ";", expecting ")"
+#0 C:\xampp\htdocs\snbt\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('submitEdit/soal...')
+#1 C:\xampp\htdocs\snbt\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('submitEdit/soal...')
+#2 C:\xampp\htdocs\snbt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\snbt\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\snbt\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\snbt\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
